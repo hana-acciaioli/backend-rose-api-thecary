@@ -18,7 +18,6 @@ describe('quotes routes', () => {
     };
     const res = await request(app).post('/quotes').send(newQuote);
     expect(res.status).toBe(200);
-    console.log(res.body);
     expect(res.body.episode_id).toEqual(newQuote.episode_id);
     expect(res.body.character_id).toEqual(newQuote.character_id);
     expect(res.body.detail).toEqual(newQuote.detail);
