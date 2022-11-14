@@ -8,7 +8,7 @@ describe('characters routes', () => {
     return setup(pool);
   });
 
-  it.skip('should return a list of characters with nested quotes', async () => {
+  it('should return a list of characters with nested quotes', async () => {
     const res = await request(app).get('/characters');
     expect(res.body.length).toEqual(7);
     const moira = res.body.find((char) => char.id === '1');
@@ -16,7 +16,7 @@ describe('characters routes', () => {
     expect(moira).toHaveProperty('last_name', 'Rose');
     expect(moira).toHaveProperty('quotes');
     expect(moira.quotes[0]).toHaveProperty('detail');
-    expect(moira.quotes[0]).toHaveProperty('character_id');
+    expect(moira.quotes[0]).toHaveProperty('characterId');
     expect(moira.quotes[0]).toHaveProperty('id');
   });
 
