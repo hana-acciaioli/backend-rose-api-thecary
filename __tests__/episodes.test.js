@@ -15,7 +15,7 @@ describe('episodes routes', () => {
     expect(newCar).toHaveProperty('title', 'New Car');
     expect(newCar).toHaveProperty('season', 3);
     expect(newCar.quotes[0]).toHaveProperty('detail');
-    expect(newCar.quotes[0]).toHaveProperty('character_id');
+    expect(newCar.quotes[0]).toHaveProperty('characterId');
     expect(newCar.quotes[0]).toHaveProperty('id');
   });
 

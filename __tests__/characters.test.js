@@ -16,7 +16,7 @@ describe('characters routes', () => {
     expect(moira).toHaveProperty('last_name', 'Rose');
     expect(moira).toHaveProperty('quotes');
     expect(moira.quotes[0]).toHaveProperty('detail');
-    expect(moira.quotes[0]).toHaveProperty('character_id');
+    expect(moira.quotes[0]).toHaveProperty('characterId');
     expect(moira.quotes[0]).toHaveProperty('id');
   });
 
